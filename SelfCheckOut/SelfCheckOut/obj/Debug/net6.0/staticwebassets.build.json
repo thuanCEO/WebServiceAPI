@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "5pzySOwIIspzMAr9+odNHTtePVJsXBpWWshX/XCabC0=",
+  "Source": "SelfCheckOutAPI",
+  "BasePath": "_content/SelfCheckOutAPI",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
