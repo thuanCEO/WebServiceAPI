@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SelfCheckOutAPI")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ccf9be730de11d6a795e6b43dcafa37cc7673cfe")]
 [assembly: System.Reflection.AssemblyProductAttribute("SelfCheckOutAPI")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SelfCheckOutAPI")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

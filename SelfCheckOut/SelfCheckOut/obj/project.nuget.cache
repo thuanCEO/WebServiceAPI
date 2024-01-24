@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "UuvT4sj7LOOc0KEBDP4qmgenCDsOdH0WpPEqsLMLTZKA7BRtCpSTCe8KgGnQzBFSa0ga/yAuS+jIdxQOlL9ZiQ==",
+  "dgSpecHash": "TKOD9Ds6rxvTc20/vdcThOGYTfdWR7BMglNF+qUSmPsk+PPjjMOf+D6CxIWhyojSVdqE6CjKxkiCacn1GoKn5w==",
   "success": true,
-  "projectFilePath": "D:\\SWD\\SelfCheckOut\\SelfCheckOut\\SelfCheckOutAPI.csproj",
+  "projectFilePath": "D:\\SWD\\WebServiceAPI\\SelfCheckOut\\SelfCheckOut\\SelfCheckOutAPI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Acer\\.nuget\\packages\\azure.core\\1.25.0\\azure.core.1.25.0.nupkg.sha512",
     "C:\\Users\\Acer\\.nuget\\packages\\azure.identity\\1.7.0\\azure.identity.1.7.0.nupkg.sha512",

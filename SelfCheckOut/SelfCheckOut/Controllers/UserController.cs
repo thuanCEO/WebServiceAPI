@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using System;
-using SelfCheckOut;
+using SelfCheckOutAPI;
 
 namespace SelfCheckOutAPI.Controllers
 {

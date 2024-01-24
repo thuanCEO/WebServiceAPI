@@ -13,6 +13,8 @@ public partial class User
 
     public string Email { get; set; } = null!;
 
+    public string Password { get; set; } = null!;
+
     public string Address { get; set; } = null!;
 
     public string? Description { get; set; }
