@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Identity.Data;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using WebAppAPI.Entities;
+using WebAppAPI.Service;
 
 namespace WebAppAPI.Controllers
 {
@@ -135,5 +136,70 @@ namespace WebAppAPI.Controllers
             return hashedPassword == plainPassword;
         }
 
+        [HttpPost("{CreateUser}")]
+        public async Task<ActionResult<User>> CreateUserAsync([FromBody] UserRegisterModel createUserRequest)
+        {
+            if (!ModelState.IsValid)
+            {
+                return BadRequest(ModelState);
+            }
+
+            var existingUser = await _dbContext.Users.FirstOrDefaultAsync(u => u.Email == createUserRequest.Email);
+            if (existingUser != null)
+            {
+                return Conflict(new { message = "Email address already exists" });
+            }
+
+            var user = new User
+            {
+                Email = createUserRequest.Email,
+                Password = createUserRequest.Password, 
+                FullName = createUserRequest.FullName,
+                PhoneNumber = createUserRequest.PhoneNumber,
+                Address = createUserRequest.Address,
+                Description = createUserRequest.Description,
+                RoleId = createUserRequest.RoleId,
+                CreationDate = DateTime.UtcNow, 
+                Status = 1, 
+            };
+
+            _dbContext.Users.Add(user);
+            await _dbContext.SaveChangesAsync();
+            return CreatedAtAction(nameof(GetUsers), new { id = user.Id }, user);
+        }
+        [HttpPut("{id}")]
+        public async Task<IActionResult> UpdateUserAsync(int id, [FromBody] UpdateUserRequest updateUserRequest)
+        {
+            if (!ModelState.IsValid)
+            {
+                return BadRequest(ModelState);
+            }
+
+            var user = await _dbContext.Users.FindAsync(id);
+
+            if (user == null)
+            {
+                return NotFound();
+            }
+            user.FullName = updateUserRequest.FullName;
+            user.PhoneNumber = updateUserRequest.PhoneNumber;
+            user.Email = updateUserRequest.Email;
+            user.Password = updateUserRequest.Password; 
+            user.Address = updateUserRequest.Address;
+            user.Description = updateUserRequest.Description;
+            user.Status = updateUserRequest.Status;
+            user.Code = updateUserRequest.Code;
+            user.RoleId = updateUserRequest.RoleId;
+            user.ModificationDate = DateTime.UtcNow;
+            user.ModificationBy = "API"; 
+            user.IsDeleted = updateUserRequest.IsDeleted;
+
+            await _dbContext.SaveChangesAsync();
+
+            return NoContent();
+        }
     }
+
+
 }
+
