@@ -1,12 +1,12 @@
 
-
+using Newtonsoft.Json.Serialization;
 using Microsoft.EntityFrameworkCore;
 using WebAppAPI.Entities;
 
-var builder = WebApplication.CreateBuilder(args);
+            var builder = WebApplication.CreateBuilder(args);
 
-builder.Services.AddDbContext<ScanMachineContext>(option =>
-option.UseSqlServer(builder.Configuration.GetConnectionString("DBConnetion")));
+            builder.Services.AddDbContext<ScanMachineContext>(option =>
+                option.UseSqlServer(builder.Configuration.GetConnectionString("DBConnetion")));
             
             // Add services to the container.
 
@@ -15,7 +15,15 @@ option.UseSqlServer(builder.Configuration.GetConnectionString("DBConnetion")));
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();
 
+            // JSON serializer
+            builder.Services.AddControllers().AddNewtonsoftJson(options =>
+                options.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore).AddNewtonsoftJson(
+                options => options.SerializerSettings.ContractResolver = new DefaultContractResolver());
+
             var app = builder.Build();
+
+            //Enable CROS
+            app.UseCors(c => c.AllowAnyHeader().AllowAnyOrigin().AllowAnyMethod());
 
             // Configure the HTTP request pipeline.
             if (app.Environment.IsDevelopment())
