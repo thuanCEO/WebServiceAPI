@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using WebAppAPI.DTO;
 using WebAppAPI.Entities;
 
 namespace WebAppAPI.Controllers
@@ -14,7 +15,10 @@ namespace WebAppAPI.Controllers
         {
             _dbContext = dbcontext;
         }
-
+        /// <summary>
+        /// Retrieve all products.
+        /// </summary>
+        /// <returns>A list of products.</returns>
         [HttpGet]
         public async Task<ActionResult<IEnumerable<Product>>> GetProducts()
         {
@@ -24,6 +28,11 @@ namespace WebAppAPI.Controllers
             }
             return await _dbContext.Products.ToArrayAsync();
         }
+        /// <summary>
+        /// Retrieve a product by ID.
+        /// </summary>
+        /// <param name="ID">The ID of the product.</param>
+        /// <returns>The product with the specified ID.</returns>
         [HttpGet("{ID}")]
         public async Task<ActionResult<Product>> GetProductsID(int ID)
         {
@@ -40,52 +49,102 @@ namespace WebAppAPI.Controllers
 
             return product;
         }
+        /// <summary>
+        /// Create a new product.
+        /// </summary>
+        /// <param name="productDto">The product data.</param>
+        /// <returns>The newly created product.</returns>
         [HttpPost]
-        public async Task<ActionResult<User>> PostProducts(Product product)
+        public async Task<ActionResult<Product>> PostProducts(RequestProductDTO productDto)
         {
-            if (_dbContext == null)
+            if (_dbContext == null || productDto == null)
             {
-                return NotFound();
+                return BadRequest("Invalid product data.");
             }
-            _dbContext.Products.Add(product);
-            await _dbContext.SaveChangesAsync();
-            return CreatedAtAction(nameof(GetProducts), new { ID = product.Id }, product);
-        }
-        [HttpPut]
-        public async Task<IActionResult> PutProducts(int ID, Product product)
-        {
-            if (_dbContext == null)
-            {
-                return NotFound();
-            }
-            if (ID != product.Id)
-            {
-                return BadRequest();
-            }
-            _dbContext.Entry(product).State = EntityState.Modified;
+
             try
             {
+                // Tạo một đối tượng Product từ dữ liệu trong ProductDto
+                Product product = new Product
+                {
+                    ProductName = productDto.ProductName,
+                    Price = productDto.Price,
+                    Quantity = productDto.Quantity,
+                    Title = productDto.Title,
+                    Description = productDto.Description,
+                    Status = productDto.Status,
+                    BrandId = 1,
+                    CategoryId = 1,
+                    ImageId = 1,
+                    CreationDate = DateTime.Now,
+                    // Các trường khác tương ứng nếu có
+                };
+
+                _dbContext.Products.Add(product);
                 await _dbContext.SaveChangesAsync();
 
+                return CreatedAtAction(nameof(GetProducts), new { ID = product.Id }, product);
             }
-            catch (DbUpdateConcurrencyException)
+            catch (Exception ex)
             {
-                if (!ProductAvailable(ID))
-                {
-                    return NotFound();
-                }
-                else
-                {
-                    throw;
-                }
+                // Xử lý các ngoại lệ khi thêm sản phẩm vào cơ sở dữ liệu
+                return StatusCode(500, $"Internal server error: {ex.Message}");
             }
-            return Ok();
         }
+        /// <summary>
+        /// Update a product.
+        /// </summary>
+        /// <param name="id">The ID of the product to update.</param>
+        /// <param name="productDto">The updated product data.</param>
+        /// <returns>The updated product.</returns>
+        [HttpPut("{id}")]
+        public async Task<ActionResult<Product>> UpdateProduct(int id, RequestProductDTO productDto)
+        {
+            if (_dbContext == null || productDto == null)
+            {
+                return BadRequest("Invalid product data.");
+            }
+
+            try
+            {
+                // Tìm kiếm sản phẩm cần cập nhật
+                var product = await _dbContext.Products.FindAsync(id);
+
+                if (product == null)
+                {
+                    return NotFound("Product not found.");
+                }
+
+                // Cập nhật thông tin sản phẩm từ dữ liệu trong productDto
+                product.ProductName = productDto.ProductName;
+                product.Price = productDto.Price;
+                product.Quantity = productDto.Quantity;
+                product.Title = productDto.Title;
+                product.Description = productDto.Description;
+                product.Status = productDto.Status;
+                // Cập nhật các trường khác tương ứng nếu có
+
+                // Lưu các thay đổi vào cơ sở dữ liệu
+                await _dbContext.SaveChangesAsync();
+
+                return Ok(product);
+            }
+            catch (Exception ex)
+            {
+                // Xử lý các ngoại lệ khi cập nhật sản phẩm
+                return StatusCode(500, $"Internal server error: {ex.Message}");
+            }
+        }
+
         private bool ProductAvailable(int ID)
         {
             return (_dbContext.Products?.Any(x => x.Id == ID)).GetValueOrDefault();
         }
-
+        /// <summary>
+        /// Delete a product by ID.
+        /// </summary>
+        /// <param name="id">The ID of the product to delete.</param>
+        /// <returns>No content if the product is deleted successfully.</returns>
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteProductAsync(int id)
         {

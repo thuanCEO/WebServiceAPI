@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Web-SWD\\WebServiceAPI\\WebAppAPI\\WebAppAPI.csproj": {}
+    "C:\\Working Space\\CN7\\SWD\\WebServiceAPI\\WebAppAPI\\WebAppAPI.csproj": {}
   },
   "projects": {
-    "D:\\Web-SWD\\WebServiceAPI\\WebAppAPI\\WebAppAPI.csproj": {
+    "C:\\Working Space\\CN7\\SWD\\WebServiceAPI\\WebAppAPI\\WebAppAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Web-SWD\\WebServiceAPI\\WebAppAPI\\WebAppAPI.csproj",
+        "projectUniqueName": "C:\\Working Space\\CN7\\SWD\\WebServiceAPI\\WebAppAPI\\WebAppAPI.csproj",
         "projectName": "WebAppAPI",
-        "projectPath": "D:\\Web-SWD\\WebServiceAPI\\WebAppAPI\\WebAppAPI.csproj",
-        "packagesPath": "C:\\Users\\Acer\\.nuget\\packages\\",
-        "outputPath": "D:\\Web-SWD\\WebServiceAPI\\WebAppAPI\\obj\\",
+        "projectPath": "C:\\Working Space\\CN7\\SWD\\WebServiceAPI\\WebAppAPI\\WebAppAPI.csproj",
+        "packagesPath": "C:\\Users\\voqua\\.nuget\\packages\\",
+        "outputPath": "C:\\Working Space\\CN7\\SWD\\WebServiceAPI\\WebAppAPI\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Acer\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\voqua\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -69,9 +69,17 @@
               "target": "Package",
               "version": "[8.0.0, )"
             },
+            "Swashbuckle": {
+              "target": "Package",
+              "version": "[5.6.0, )"
+            },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[6.4.0, )"
+            },
+            "Swashbuckle.AspNetCore.SwaggerUI": {
+              "target": "Package",
+              "version": "[6.5.0, )"
             }
           },
           "imports": [
