@@ -2,6 +2,7 @@
 using Microsoft.AspNetCore.Identity.Data;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using WebAppAPI.DTO;
 using WebAppAPI.Entities;
 using WebAppAPI.Service;
 
@@ -18,7 +19,9 @@ namespace WebAppAPI.Controllers
             _dbContext = dbContext;
         }
 
-
+        /// <summary>
+        /// Retrieves all users.
+        /// </summary>
         [HttpGet]
         public async Task<ActionResult<IEnumerable<User>>> GetUsers()
         {
@@ -28,7 +31,10 @@ namespace WebAppAPI.Controllers
             }
             return await _dbContext.Users.ToArrayAsync();
         }
-
+        /// <summary>
+        /// Retrieves a user by ID.
+        /// </summary>
+        /// <param name="id">The ID of the user.</param>
         [HttpGet("{ID}")]
         public async Task<ActionResult<User>> GetUsers(int ID)
         {
@@ -45,49 +51,44 @@ namespace WebAppAPI.Controllers
 
             return Users;
         }
+        ///// <summary>
+        ///// Creates a new user.
+        ///// </summary>
+        ///// <param name="userDto">The user data.</param>
+        //[HttpPost]
+        //public async Task<ActionResult<User>> CreateUser(RequestUserDTO userDto)
+        //{
+        //    if (_dbContext == null || userDto == null)
+        //    {
+        //        return BadRequest("Invalid user data.");
+        //    }
 
-        [HttpPost]
-        public async Task<ActionResult<User>> PostUsers(User user)
-        {
-            if (_dbContext == null)
-            {
-                return NotFound();
-            }
-            _dbContext.Users.Add(user);
-            await _dbContext.SaveChangesAsync();
-            return CreatedAtAction(nameof(GetUsers), new { ID = user.Id}, user);
+        //    try
+        //    {
+        //        // Tạo một đối tượng User từ dữ liệu trong UserDTO
+        //        User user = new User
+        //        {
+        //            FullName = userDto.FullName,
+        //            PhoneNumber = userDto.PhoneNumber,
+        //            Email = userDto.Email,
+        //            Password = userDto.Password,
+        //            Address = userDto.Address,
+        //            Description = userDto.Description,
+        //            Status = userDto.Status
+        //        };
 
-        }
+        //        _dbContext.Users.Add(user);
+        //        await _dbContext.SaveChangesAsync();
 
+        //        return CreatedAtAction(nameof(GetUsers), new { id = user.Id }, user);
+        //    }
+        //    catch (Exception ex)
+        //    {
+        //        // Xử lý các ngoại lệ khi tạo người dùng
+        //        return StatusCode(500, $"Internal server error: {ex.Message}");
+        //    }
+        //}
 
-        [HttpPut]
-        public async Task<IActionResult> PutUsers(int ID, User user)
-        {
-            if (_dbContext == null)
-            {
-                return NotFound();
-            }
-            if (ID != user.Id )
-            {
-                return BadRequest();
-            }
-            _dbContext.Entry(user).State = EntityState.Modified;
-            try
-            {
-                await _dbContext.SaveChangesAsync();
-                    
-            }catch (DbUpdateConcurrencyException)
-            {
-                if (!UsersAvailable(ID))
-                {
-                    return NotFound();
-                }
-                else {
-                    throw;
-                }
-            }
-            return Ok();
-        }
 
         private bool UsersAvailable(int ID)
         {
@@ -117,8 +118,10 @@ namespace WebAppAPI.Controllers
             await _dbContext.SaveChangesAsync();
             return Ok();
         }
-
-
+        /// <summary>
+        /// Logs in a user.
+        /// </summary>
+        /// <param name="loginRequest">The login request containing email and password.</param>
         [HttpPost("login")]
         public async Task<ActionResult<User>> LoginAsync([FromBody] LoginRequest loginRequest)
         {
@@ -135,7 +138,10 @@ namespace WebAppAPI.Controllers
         {
             return hashedPassword == plainPassword;
         }
-
+        /// <summary>
+        /// Creates a new user.
+        /// </summary>
+        /// <param name="userDto">The user data.</param>
         [HttpPost("{CreateUser}")]
         public async Task<ActionResult<User>> CreateUserAsync([FromBody] UserRegisterModel createUserRequest)
         {
@@ -167,6 +173,11 @@ namespace WebAppAPI.Controllers
             await _dbContext.SaveChangesAsync();
             return CreatedAtAction(nameof(GetUsers), new { id = user.Id }, user);
         }
+        /// <summary>
+        /// Updates a user by ID.
+        /// </summary>
+        /// <param name="id">The ID of the user to update.</param>
+        /// <param name="updateUserRequest">The updated user data.</param>
         [HttpPut("{id}")]
         public async Task<IActionResult> UpdateUserAsync(int id, [FromBody] UpdateUserRequest updateUserRequest)
         {
