@@ -142,7 +142,7 @@ namespace WebAppAPI.Controllers
         /// Creates a new user.
         /// </summary>
         /// <param name="userDto">The user data.</param>
-        [HttpPost("{CreateUser}")]
+        [HttpPost()]
         public async Task<ActionResult<User>> CreateUserAsync([FromBody] UserRegisterModel createUserRequest)
         {
             if (!ModelState.IsValid)
@@ -164,9 +164,44 @@ namespace WebAppAPI.Controllers
                 PhoneNumber = createUserRequest.PhoneNumber,
                 Address = createUserRequest.Address,
                 Description = createUserRequest.Description,
-                RoleId = createUserRequest.RoleId,
+                RoleId = 3,
                 CreationDate = DateTime.UtcNow, 
                 Status = 1, 
+            };
+
+            _dbContext.Users.Add(user);
+            await _dbContext.SaveChangesAsync();
+            return CreatedAtAction(nameof(GetUsers), new { id = user.Id }, user);
+        }
+        /// <summary>
+        /// Creates a new manager.
+        /// </summary>
+        /// <param name="userDto">The user data.</param>
+        [HttpPost()]
+        public async Task<ActionResult<User>> CreateUserByAdmin([FromBody] UserRegisterModel createUserRequest)
+        {
+            if (!ModelState.IsValid)
+            {
+                return BadRequest(ModelState);
+            }
+
+            var existingUser = await _dbContext.Users.FirstOrDefaultAsync(u => u.Email == createUserRequest.Email);
+            if (existingUser != null)
+            {
+                return Conflict(new { message = "Email address already exists" });
+            }
+
+            var user = new User
+            {
+                Email = createUserRequest.Email,
+                Password = createUserRequest.Password,
+                FullName = createUserRequest.FullName,
+                PhoneNumber = createUserRequest.PhoneNumber,
+                Address = createUserRequest.Address,
+                Description = createUserRequest.Description,
+                RoleId = 2,
+                CreationDate = DateTime.UtcNow,
+                Status = 1,
             };
 
             _dbContext.Users.Add(user);
