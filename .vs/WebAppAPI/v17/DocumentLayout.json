@@ -3,104 +3,20 @@
   "WorkspaceRootPath": "D:\\FPT\\SWD392\\ProjectSWD392\\WebServiceAPI\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{1469C386-3D8C-4674-BF46-33414EBD73C1}|WebAppAPI\\WebAppAPI.csproj|D:\\FPT\\SWD392\\ProjectSWD392\\WebServiceAPI\\webappapi\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1469C386-3D8C-4674-BF46-33414EBD73C1}|WebAppAPI\\WebAppAPI.csproj|solutionrelative:webappapi\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1469C386-3D8C-4674-BF46-33414EBD73C1}|WebAppAPI\\WebAppAPI.csproj|d:\\fpt\\swd392\\projectswd392\\webserviceapi\\webappapi\\service\\userlogindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1469C386-3D8C-4674-BF46-33414EBD73C1}|WebAppAPI\\WebAppAPI.csproj|solutionrelative:webappapi\\service\\userlogindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1469C386-3D8C-4674-BF46-33414EBD73C1}|WebAppAPI\\WebAppAPI.csproj|D:\\FPT\\SWD392\\ProjectSWD392\\WebServiceAPI\\webappapi\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1469C386-3D8C-4674-BF46-33414EBD73C1}|WebAppAPI\\WebAppAPI.csproj|solutionrelative:webappapi\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1469C386-3D8C-4674-BF46-33414EBD73C1}|WebAppAPI\\WebAppAPI.csproj|D:\\FPT\\SWD392\\ProjectSWD392\\WebServiceAPI\\webappapi\\webappapi.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}",
-      "RelativeMoniker": "D:0:0:{1469C386-3D8C-4674-BF46-33414EBD73C1}|WebAppAPI\\WebAppAPI.csproj|solutionrelative:webappapi\\webappapi.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1469C386-3D8C-4674-BF46-33414EBD73C1}|WebAppAPI\\WebAppAPI.csproj|D:\\FPT\\SWD392\\ProjectSWD392\\WebServiceAPI\\webappapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{1469C386-3D8C-4674-BF46-33414EBD73C1}|WebAppAPI\\WebAppAPI.csproj|solutionrelative:webappapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1469C386-3D8C-4674-BF46-33414EBD73C1}|WebAppAPI\\WebAppAPI.csproj|D:\\FPT\\SWD392\\ProjectSWD392\\WebServiceAPI\\webappapi\\migrations\\scanmachinecontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1469C386-3D8C-4674-BF46-33414EBD73C1}|WebAppAPI\\WebAppAPI.csproj|solutionrelative:webappapi\\migrations\\scanmachinecontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1469C386-3D8C-4674-BF46-33414EBD73C1}|WebAppAPI\\WebAppAPI.csproj|D:\\FPT\\SWD392\\ProjectSWD392\\WebServiceAPI\\webappapi\\entities\\scanmachinecontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1469C386-3D8C-4674-BF46-33414EBD73C1}|WebAppAPI\\WebAppAPI.csproj|solutionrelative:webappapi\\entities\\scanmachinecontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1469C386-3D8C-4674-BF46-33414EBD73C1}|WebAppAPI\\WebAppAPI.csproj|D:\\FPT\\SWD392\\ProjectSWD392\\WebServiceAPI\\webappapi\\entities\\shopstore.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1469C386-3D8C-4674-BF46-33414EBD73C1}|WebAppAPI\\WebAppAPI.csproj|solutionrelative:webappapi\\entities\\shopstore.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1469C386-3D8C-4674-BF46-33414EBD73C1}|WebAppAPI\\WebAppAPI.csproj|D:\\FPT\\SWD392\\ProjectSWD392\\WebServiceAPI\\webappapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1469C386-3D8C-4674-BF46-33414EBD73C1}|WebAppAPI\\WebAppAPI.csproj|solutionrelative:webappapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1469C386-3D8C-4674-BF46-33414EBD73C1}|WebAppAPI\\WebAppAPI.csproj|D:\\FPT\\SWD392\\ProjectSWD392\\WebServiceAPI\\webappapi\\repository\\unitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1469C386-3D8C-4674-BF46-33414EBD73C1}|WebAppAPI\\WebAppAPI.csproj|solutionrelative:webappapi\\repository\\unitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1469C386-3D8C-4674-BF46-33414EBD73C1}|WebAppAPI\\WebAppAPI.csproj|D:\\FPT\\SWD392\\ProjectSWD392\\WebServiceAPI\\webappapi\\repository\\iunitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1469C386-3D8C-4674-BF46-33414EBD73C1}|WebAppAPI\\WebAppAPI.csproj|solutionrelative:webappapi\\repository\\iunitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1469C386-3D8C-4674-BF46-33414EBD73C1}|WebAppAPI\\WebAppAPI.csproj|D:\\FPT\\SWD392\\ProjectSWD392\\WebServiceAPI\\webappapi\\dto\\updateorderdtocs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1469C386-3D8C-4674-BF46-33414EBD73C1}|WebAppAPI\\WebAppAPI.csproj|solutionrelative:webappapi\\dto\\updateorderdtocs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1469C386-3D8C-4674-BF46-33414EBD73C1}|WebAppAPI\\WebAppAPI.csproj|D:\\FPT\\SWD392\\ProjectSWD392\\WebServiceAPI\\webappapi\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{1469C386-3D8C-4674-BF46-33414EBD73C1}|WebAppAPI\\WebAppAPI.csproj|solutionrelative:webappapi\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1469C386-3D8C-4674-BF46-33414EBD73C1}|WebAppAPI\\WebAppAPI.csproj|D:\\FPT\\SWD392\\ProjectSWD392\\WebServiceAPI\\webappapi\\webappapi.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{1469C386-3D8C-4674-BF46-33414EBD73C1}|WebAppAPI\\WebAppAPI.csproj|solutionrelative:webappapi\\webappapi.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{1469C386-3D8C-4674-BF46-33414EBD73C1}|WebAppAPI\\WebAppAPI.csproj|D:\\FPT\\SWD392\\ProjectSWD392\\WebServiceAPI\\webappapi\\controllers\\orderscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1469C386-3D8C-4674-BF46-33414EBD73C1}|WebAppAPI\\WebAppAPI.csproj|solutionrelative:webappapi\\controllers\\orderscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1469C386-3D8C-4674-BF46-33414EBD73C1}|WebAppAPI\\WebAppAPI.csproj|D:\\FPT\\SWD392\\ProjectSWD392\\WebServiceAPI\\webappapi\\webappapi.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
-      "RelativeMoniker": "D:0:0:{1469C386-3D8C-4674-BF46-33414EBD73C1}|WebAppAPI\\WebAppAPI.csproj|solutionrelative:webappapi\\webappapi.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+      "AbsoluteMoniker": "D:0:0:{1469C386-3D8C-4674-BF46-33414EBD73C1}|WebAppAPI\\WebAppAPI.csproj|d:\\fpt\\swd392\\projectswd392\\webserviceapi\\webappapi\\controllers\\ordersdetailscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1469C386-3D8C-4674-BF46-33414EBD73C1}|WebAppAPI\\WebAppAPI.csproj|solutionrelative:webappapi\\controllers\\ordersdetailscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1469C386-3D8C-4674-BF46-33414EBD73C1}|WebAppAPI\\WebAppAPI.csproj|D:\\FPT\\SWD392\\ProjectSWD392\\WebServiceAPI\\webappapi\\entities\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1469C386-3D8C-4674-BF46-33414EBD73C1}|WebAppAPI\\WebAppAPI.csproj|solutionrelative:webappapi\\entities\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1469C386-3D8C-4674-BF46-33414EBD73C1}|WebAppAPI\\WebAppAPI.csproj|d:\\fpt\\swd392\\projectswd392\\webserviceapi\\webappapi\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1469C386-3D8C-4674-BF46-33414EBD73C1}|WebAppAPI\\WebAppAPI.csproj|solutionrelative:webappapi\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1469C386-3D8C-4674-BF46-33414EBD73C1}|WebAppAPI\\WebAppAPI.csproj|D:\\FPT\\SWD392\\ProjectSWD392\\WebServiceAPI\\webappapi\\weatherforecast.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1469C386-3D8C-4674-BF46-33414EBD73C1}|WebAppAPI\\WebAppAPI.csproj|solutionrelative:webappapi\\weatherforecast.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1469C386-3D8C-4674-BF46-33414EBD73C1}|WebAppAPI\\WebAppAPI.csproj|D:\\FPT\\SWD392\\ProjectSWD392\\WebServiceAPI\\webappapi\\dto\\requestuserdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1469C386-3D8C-4674-BF46-33414EBD73C1}|WebAppAPI\\WebAppAPI.csproj|solutionrelative:webappapi\\dto\\requestuserdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1469C386-3D8C-4674-BF46-33414EBD73C1}|WebAppAPI\\WebAppAPI.csproj|D:\\FPT\\SWD392\\ProjectSWD392\\WebServiceAPI\\webappapi\\service\\updateuserrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1469C386-3D8C-4674-BF46-33414EBD73C1}|WebAppAPI\\WebAppAPI.csproj|solutionrelative:webappapi\\service\\updateuserrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1469C386-3D8C-4674-BF46-33414EBD73C1}|WebAppAPI\\WebAppAPI.csproj|D:\\FPT\\SWD392\\ProjectSWD392\\WebServiceAPI\\webappapi\\dto\\requestproductdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1469C386-3D8C-4674-BF46-33414EBD73C1}|WebAppAPI\\WebAppAPI.csproj|solutionrelative:webappapi\\dto\\requestproductdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1469C386-3D8C-4674-BF46-33414EBD73C1}|WebAppAPI\\WebAppAPI.csproj|D:\\FPT\\SWD392\\ProjectSWD392\\WebServiceAPI\\webappapi\\dto\\requestoderdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1469C386-3D8C-4674-BF46-33414EBD73C1}|WebAppAPI\\WebAppAPI.csproj|solutionrelative:webappapi\\dto\\requestoderdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1469C386-3D8C-4674-BF46-33414EBD73C1}|WebAppAPI\\WebAppAPI.csproj|D:\\FPT\\SWD392\\ProjectSWD392\\WebServiceAPI\\webappapi\\entities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1469C386-3D8C-4674-BF46-33414EBD73C1}|WebAppAPI\\WebAppAPI.csproj|solutionrelative:webappapi\\entities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1469C386-3D8C-4674-BF46-33414EBD73C1}|WebAppAPI\\WebAppAPI.csproj|D:\\FPT\\SWD392\\ProjectSWD392\\WebServiceAPI\\webappapi\\dto\\responeorderdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1469C386-3D8C-4674-BF46-33414EBD73C1}|WebAppAPI\\WebAppAPI.csproj|solutionrelative:webappapi\\dto\\responeorderdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1469C386-3D8C-4674-BF46-33414EBD73C1}|WebAppAPI\\WebAppAPI.csproj|D:\\FPT\\SWD392\\ProjectSWD392\\WebServiceAPI\\webappapi\\controllers\\productscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1469C386-3D8C-4674-BF46-33414EBD73C1}|WebAppAPI\\WebAppAPI.csproj|solutionrelative:webappapi\\controllers\\productscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1469C386-3D8C-4674-BF46-33414EBD73C1}|WebAppAPI\\WebAppAPI.csproj|D:\\FPT\\SWD392\\ProjectSWD392\\WebServiceAPI\\webappapi\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1469C386-3D8C-4674-BF46-33414EBD73C1}|WebAppAPI\\WebAppAPI.csproj|solutionrelative:webappapi\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -110,309 +26,62 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 10,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "ScanMachineContextModelSnapshot.cs",
-              "DocumentMoniker": "D:\\FPT\\SWD392\\ProjectSWD392\\WebServiceAPI\\WebAppAPI\\Migrations\\ScanMachineContextModelSnapshot.cs",
-              "RelativeDocumentMoniker": "WebAppAPI\\Migrations\\ScanMachineContextModelSnapshot.cs",
-              "ToolTip": "D:\\FPT\\SWD392\\ProjectSWD392\\WebServiceAPI\\WebAppAPI\\Migrations\\ScanMachineContextModelSnapshot.cs",
-              "RelativeToolTip": "WebAppAPI\\Migrations\\ScanMachineContextModelSnapshot.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-18T08:34:12.188Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "ShopStore.cs",
-              "DocumentMoniker": "D:\\FPT\\SWD392\\ProjectSWD392\\WebServiceAPI\\WebAppAPI\\Entities\\ShopStore.cs",
-              "RelativeDocumentMoniker": "WebAppAPI\\Entities\\ShopStore.cs",
-              "ToolTip": "D:\\FPT\\SWD392\\ProjectSWD392\\WebServiceAPI\\WebAppAPI\\Entities\\ShopStore.cs",
-              "RelativeToolTip": "WebAppAPI\\Entities\\ShopStore.cs",
-              "ViewState": "AQIAACQAAAAAAAAAAAAuwAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-18T08:33:29.636Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "ScanMachineContext.cs",
-              "DocumentMoniker": "D:\\FPT\\SWD392\\ProjectSWD392\\WebServiceAPI\\WebAppAPI\\Entities\\ScanMachineContext.cs",
-              "RelativeDocumentMoniker": "WebAppAPI\\Entities\\ScanMachineContext.cs",
-              "ToolTip": "D:\\FPT\\SWD392\\ProjectSWD392\\WebServiceAPI\\WebAppAPI\\Entities\\ScanMachineContext.cs",
-              "RelativeToolTip": "WebAppAPI\\Entities\\ScanMachineContext.cs",
-              "ViewState": "AQIAABcAAAAAAAAAAAA9wAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-18T08:32:35.316Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "IUnitOfWork.cs",
-              "DocumentMoniker": "D:\\FPT\\SWD392\\ProjectSWD392\\WebServiceAPI\\WebAppAPI\\Repository\\IUnitOfWork.cs",
-              "RelativeDocumentMoniker": "WebAppAPI\\Repository\\IUnitOfWork.cs",
-              "ToolTip": "D:\\FPT\\SWD392\\ProjectSWD392\\WebServiceAPI\\WebAppAPI\\Repository\\IUnitOfWork.cs",
-              "RelativeToolTip": "WebAppAPI\\Repository\\IUnitOfWork.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-18T08:32:29.956Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "UnitOfWork.cs",
-              "DocumentMoniker": "D:\\FPT\\SWD392\\ProjectSWD392\\WebServiceAPI\\WebAppAPI\\Repository\\UnitOfWork.cs",
-              "RelativeDocumentMoniker": "WebAppAPI\\Repository\\UnitOfWork.cs",
-              "ToolTip": "D:\\FPT\\SWD392\\ProjectSWD392\\WebServiceAPI\\WebAppAPI\\Repository\\UnitOfWork.cs",
-              "RelativeToolTip": "WebAppAPI\\Repository\\UnitOfWork.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAA3AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-18T08:32:18.915Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "WeatherForecast.cs",
-              "DocumentMoniker": "D:\\FPT\\SWD392\\ProjectSWD392\\WebServiceAPI\\WebAppAPI\\WeatherForecast.cs",
-              "RelativeDocumentMoniker": "WebAppAPI\\WeatherForecast.cs",
-              "ToolTip": "D:\\FPT\\SWD392\\ProjectSWD392\\WebServiceAPI\\WebAppAPI\\WeatherForecast.cs",
-              "RelativeToolTip": "WebAppAPI\\WeatherForecast.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-18T08:06:11.454Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "launchSettings.json",
-              "DocumentMoniker": "D:\\FPT\\SWD392\\ProjectSWD392\\WebServiceAPI\\WebAppAPI\\Properties\\launchSettings.json",
-              "RelativeDocumentMoniker": "WebAppAPI\\Properties\\launchSettings.json",
-              "ToolTip": "D:\\FPT\\SWD392\\ProjectSWD392\\WebServiceAPI\\WebAppAPI\\Properties\\launchSettings.json",
-              "RelativeToolTip": "WebAppAPI\\Properties\\launchSettings.json",
-              "ViewState": "AQIAAA8AAAAAAAAAAAAAABoAAAACAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-03-18T08:06:11.456Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "D:\\FPT\\SWD392\\ProjectSWD392\\WebServiceAPI\\WebAppAPI\\appsettings.json",
-              "RelativeDocumentMoniker": "WebAppAPI\\appsettings.json",
-              "ToolTip": "D:\\FPT\\SWD392\\ProjectSWD392\\WebServiceAPI\\WebAppAPI\\appsettings.json",
-              "RelativeToolTip": "WebAppAPI\\appsettings.json",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAEAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-03-18T08:06:11.458Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "Program.cs",
-              "DocumentMoniker": "D:\\FPT\\SWD392\\ProjectSWD392\\WebServiceAPI\\WebAppAPI\\Program.cs",
-              "RelativeDocumentMoniker": "WebAppAPI\\Program.cs",
-              "ToolTip": "D:\\FPT\\SWD392\\ProjectSWD392\\WebServiceAPI\\WebAppAPI\\Program.cs",
-              "RelativeToolTip": "WebAppAPI\\Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAABaAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-18T08:06:11.459Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "UpdateOrderDTOcs.cs",
-              "DocumentMoniker": "D:\\FPT\\SWD392\\ProjectSWD392\\WebServiceAPI\\WebAppAPI\\DTO\\UpdateOrderDTOcs.cs",
-              "RelativeDocumentMoniker": "WebAppAPI\\DTO\\UpdateOrderDTOcs.cs",
-              "ToolTip": "D:\\FPT\\SWD392\\ProjectSWD392\\WebServiceAPI\\WebAppAPI\\DTO\\UpdateOrderDTOcs.cs",
-              "RelativeToolTip": "WebAppAPI\\DTO\\UpdateOrderDTOcs.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-18T08:06:11.46Z"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "UsersController.cs",
-              "DocumentMoniker": "D:\\FPT\\SWD392\\ProjectSWD392\\WebServiceAPI\\WebAppAPI\\Controllers\\UsersController.cs",
-              "RelativeDocumentMoniker": "WebAppAPI\\Controllers\\UsersController.cs",
-              "ToolTip": "D:\\FPT\\SWD392\\ProjectSWD392\\WebServiceAPI\\WebAppAPI\\Controllers\\UsersController.cs",
-              "RelativeToolTip": "WebAppAPI\\Controllers\\UsersController.cs",
-              "ViewState": "AQIAAJwAAAAAAAAAAAAAAKgAAAAvAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-18T08:06:22.057Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "WebAppAPI.csproj",
-              "DocumentMoniker": "D:\\FPT\\SWD392\\ProjectSWD392\\WebServiceAPI\\WebAppAPI\\WebAppAPI.csproj",
-              "RelativeDocumentMoniker": "WebAppAPI\\WebAppAPI.csproj",
-              "ToolTip": "D:\\FPT\\SWD392\\ProjectSWD392\\WebServiceAPI\\WebAppAPI\\WebAppAPI.csproj",
-              "RelativeToolTip": "WebAppAPI\\WebAppAPI.csproj",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003627|",
-              "WhenOpened": "2024-03-18T08:06:23.802Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "Product.cs",
-              "DocumentMoniker": "D:\\FPT\\SWD392\\ProjectSWD392\\WebServiceAPI\\WebAppAPI\\Entities\\Product.cs",
-              "RelativeDocumentMoniker": "WebAppAPI\\Entities\\Product.cs",
-              "ToolTip": "D:\\FPT\\SWD392\\ProjectSWD392\\WebServiceAPI\\WebAppAPI\\Entities\\Product.cs",
-              "RelativeToolTip": "WebAppAPI\\Entities\\Product.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-18T08:06:23.802Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "WebAppAPI",
-              "DocumentMoniker": "D:\\FPT\\SWD392\\ProjectSWD392\\WebServiceAPI\\WebAppAPI\\WebAppAPI.csproj",
-              "RelativeDocumentMoniker": "WebAppAPI\\WebAppAPI.csproj",
-              "ToolTip": "D:\\FPT\\SWD392\\ProjectSWD392\\WebServiceAPI\\WebAppAPI\\WebAppAPI.csproj",
-              "RelativeToolTip": "WebAppAPI\\WebAppAPI.csproj",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003627|",
-              "WhenOpened": "2024-03-18T08:06:23.802Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
               "Title": "OrdersController.cs",
               "DocumentMoniker": "D:\\FPT\\SWD392\\ProjectSWD392\\WebServiceAPI\\WebAppAPI\\Controllers\\OrdersController.cs",
               "RelativeDocumentMoniker": "WebAppAPI\\Controllers\\OrdersController.cs",
               "ToolTip": "D:\\FPT\\SWD392\\ProjectSWD392\\WebServiceAPI\\WebAppAPI\\Controllers\\OrdersController.cs",
               "RelativeToolTip": "WebAppAPI\\Controllers\\OrdersController.cs",
-              "ViewState": "AQIAAAwAAAAAAAAAAAAAABQAAAAVAAAA",
+              "ViewState": "AQIAALwAAAAAAAAAAAAswM0AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-18T08:06:23.802Z",
+              "WhenOpened": "2024-03-20T03:19:45.616Z",
+              "IsPinned": true,
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "WebAppAPI.http",
-              "DocumentMoniker": "D:\\FPT\\SWD392\\ProjectSWD392\\WebServiceAPI\\WebAppAPI\\WebAppAPI.http",
-              "RelativeDocumentMoniker": "WebAppAPI\\WebAppAPI.http",
-              "ToolTip": "D:\\FPT\\SWD392\\ProjectSWD392\\WebServiceAPI\\WebAppAPI\\WebAppAPI.http",
-              "RelativeToolTip": "WebAppAPI\\WebAppAPI.http",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003502|",
-              "WhenOpened": "2024-03-18T08:06:23.802Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "UpdateUserRequest.cs",
-              "DocumentMoniker": "D:\\FPT\\SWD392\\ProjectSWD392\\WebServiceAPI\\WebAppAPI\\Service\\UpdateUserRequest.cs",
-              "RelativeDocumentMoniker": "WebAppAPI\\Service\\UpdateUserRequest.cs",
-              "ToolTip": "D:\\FPT\\SWD392\\ProjectSWD392\\WebServiceAPI\\WebAppAPI\\Service\\UpdateUserRequest.cs",
-              "RelativeToolTip": "WebAppAPI\\Service\\UpdateUserRequest.cs",
-              "ViewState": "AQIAAAoAAAAAAAAAAAAgwAQAAAAiAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-18T08:06:23.802Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 21,
-              "Title": "RequestOderDTO.cs",
-              "DocumentMoniker": "D:\\FPT\\SWD392\\ProjectSWD392\\WebServiceAPI\\WebAppAPI\\DTO\\RequestOderDTO.cs",
-              "RelativeDocumentMoniker": "WebAppAPI\\DTO\\RequestOderDTO.cs",
-              "ToolTip": "D:\\FPT\\SWD392\\ProjectSWD392\\WebServiceAPI\\WebAppAPI\\DTO\\RequestOderDTO.cs",
-              "RelativeToolTip": "WebAppAPI\\DTO\\RequestOderDTO.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-18T08:06:23.802Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "RequestProductDTO.cs",
-              "DocumentMoniker": "D:\\FPT\\SWD392\\ProjectSWD392\\WebServiceAPI\\WebAppAPI\\DTO\\RequestProductDTO.cs",
-              "RelativeDocumentMoniker": "WebAppAPI\\DTO\\RequestProductDTO.cs",
-              "ToolTip": "D:\\FPT\\SWD392\\ProjectSWD392\\WebServiceAPI\\WebAppAPI\\DTO\\RequestProductDTO.cs",
-              "RelativeToolTip": "WebAppAPI\\DTO\\RequestProductDTO.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-18T08:06:23.802Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 23,
-              "Title": "ResponeOrderDTO.cs",
-              "DocumentMoniker": "D:\\FPT\\SWD392\\ProjectSWD392\\WebServiceAPI\\WebAppAPI\\DTO\\ResponeOrderDTO.cs",
-              "RelativeDocumentMoniker": "WebAppAPI\\DTO\\ResponeOrderDTO.cs",
-              "ToolTip": "D:\\FPT\\SWD392\\ProjectSWD392\\WebServiceAPI\\WebAppAPI\\DTO\\ResponeOrderDTO.cs",
-              "RelativeToolTip": "WebAppAPI\\DTO\\ResponeOrderDTO.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-18T08:06:23.802Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "RequestUserDTO.cs",
-              "DocumentMoniker": "D:\\FPT\\SWD392\\ProjectSWD392\\WebServiceAPI\\WebAppAPI\\DTO\\RequestUserDTO.cs",
-              "RelativeDocumentMoniker": "WebAppAPI\\DTO\\RequestUserDTO.cs",
-              "ToolTip": "D:\\FPT\\SWD392\\ProjectSWD392\\WebServiceAPI\\WebAppAPI\\DTO\\RequestUserDTO.cs",
-              "RelativeToolTip": "WebAppAPI\\DTO\\RequestUserDTO.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAGAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-18T08:06:23.802Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "UserLoginDTO.cs",
-              "DocumentMoniker": "D:\\FPT\\SWD392\\ProjectSWD392\\WebServiceAPI\\WebAppAPI\\Service\\UserLoginDTO.cs",
-              "RelativeDocumentMoniker": "WebAppAPI\\Service\\UserLoginDTO.cs",
-              "ToolTip": "D:\\FPT\\SWD392\\ProjectSWD392\\WebServiceAPI\\WebAppAPI\\Service\\UserLoginDTO.cs",
-              "RelativeToolTip": "WebAppAPI\\Service\\UserLoginDTO.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-18T08:06:23.802Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 24,
-              "Title": "ProductsController.cs",
-              "DocumentMoniker": "D:\\FPT\\SWD392\\ProjectSWD392\\WebServiceAPI\\WebAppAPI\\Controllers\\ProductsController.cs",
-              "RelativeDocumentMoniker": "WebAppAPI\\Controllers\\ProductsController.cs",
-              "ToolTip": "D:\\FPT\\SWD392\\ProjectSWD392\\WebServiceAPI\\WebAppAPI\\Controllers\\ProductsController.cs",
-              "RelativeToolTip": "WebAppAPI\\Controllers\\ProductsController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-18T08:06:23.802Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
               "Title": "ProductController.cs",
               "DocumentMoniker": "D:\\FPT\\SWD392\\ProjectSWD392\\WebServiceAPI\\WebAppAPI\\Controllers\\ProductController.cs",
               "RelativeDocumentMoniker": "WebAppAPI\\Controllers\\ProductController.cs",
               "ToolTip": "D:\\FPT\\SWD392\\ProjectSWD392\\WebServiceAPI\\WebAppAPI\\Controllers\\ProductController.cs",
               "RelativeToolTip": "WebAppAPI\\Controllers\\ProductController.cs",
-              "ViewState": "AQIAAIIAAAAAAAAAAAAswJIAAABRAAAA",
+              "ViewState": "AQIAAA0AAAAAAAAAAAAzwBsAAAANAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-18T08:06:23.802Z"
+              "WhenOpened": "2024-03-20T03:19:44.418Z",
+              "IsPinned": true
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
-              "Title": "User.cs",
-              "DocumentMoniker": "D:\\FPT\\SWD392\\ProjectSWD392\\WebServiceAPI\\WebAppAPI\\Entities\\User.cs",
-              "RelativeDocumentMoniker": "WebAppAPI\\Entities\\User.cs",
-              "ToolTip": "D:\\FPT\\SWD392\\ProjectSWD392\\WebServiceAPI\\WebAppAPI\\Entities\\User.cs",
-              "RelativeToolTip": "WebAppAPI\\Entities\\User.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAABMAAAAsAAAA",
+              "DocumentIndex": 2,
+              "Title": "UsersController.cs",
+              "DocumentMoniker": "D:\\FPT\\SWD392\\ProjectSWD392\\WebServiceAPI\\WebAppAPI\\Controllers\\UsersController.cs",
+              "RelativeDocumentMoniker": "WebAppAPI\\Controllers\\UsersController.cs",
+              "ToolTip": "D:\\FPT\\SWD392\\ProjectSWD392\\WebServiceAPI\\WebAppAPI\\Controllers\\UsersController.cs",
+              "RelativeToolTip": "WebAppAPI\\Controllers\\UsersController.cs",
+              "ViewState": "AQIAAGMAAAAAAAAAAAAowHIAAAANAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-18T08:06:23.802Z"
+              "WhenOpened": "2024-03-20T03:19:43.494Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "OrdersDetailsController.cs",
+              "DocumentMoniker": "D:\\FPT\\SWD392\\ProjectSWD392\\WebServiceAPI\\WebAppAPI\\Controllers\\OrdersDetailsController.cs",
+              "RelativeDocumentMoniker": "WebAppAPI\\Controllers\\OrdersDetailsController.cs",
+              "ToolTip": "D:\\FPT\\SWD392\\ProjectSWD392\\WebServiceAPI\\WebAppAPI\\Controllers\\OrdersDetailsController.cs",
+              "RelativeToolTip": "WebAppAPI\\Controllers\\OrdersDetailsController.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAADwvxEAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-20T07:07:32.607Z",
+              "IsPinned": true,
+              "EditorCaption": ""
             }
           ]
         }
