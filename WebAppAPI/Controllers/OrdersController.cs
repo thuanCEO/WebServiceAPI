@@ -23,16 +23,14 @@ namespace WebAppAPI.Controllers
         /// </summary>
         /// <returns>List of orders.</returns>
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<RequestOderDTO>>> GetOrders()
+        public async Task<ActionResult<IEnumerable<Order>>> GetOrders()
         {
             if (_dbContext == null)
             {
                 return NotFound();
             }
 
-            var orders = await _dbContext.Orders
-                                          .Select(order => new RequestOderDTO { TotalPrice = order.TotalPrice })
-                                          .ToListAsync();
+            var orders = await _dbContext.Orders.ToListAsync();
 
             return orders;
         }
@@ -205,6 +203,7 @@ namespace WebAppAPI.Controllers
 
             // Delete the order
             _dbContext.Orders.Remove(order);
+
             await _dbContext.SaveChangesAsync();
 
             return NoContent();

@@ -44,6 +44,13 @@
             <param name="id">ID of the order to delete.</param>
             <returns>Result of the order deletion.</returns>
         </member>
+        <member name="M:WebAppAPI.Controllers.OrdersDetailsController.GetOrderDetailsByID(System.Int32)">
+            <summary>
+            Get information about an order based on ID.
+            </summary>
+            <param name="ID">ID of the order to retrieve information.</param>
+            <returns>Information of the order.</returns>
+        </member>
         <member name="M:WebAppAPI.Controllers.ProductController.GetProducts">
             <summary>
             Retrieve all products.

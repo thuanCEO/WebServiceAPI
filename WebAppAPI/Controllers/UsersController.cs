@@ -118,6 +118,10 @@ namespace WebAppAPI.Controllers
             await _dbContext.SaveChangesAsync();
             return Ok();
         }
+        private bool UsersExists(int ID)
+        {
+            return _dbContext.Users.Any(e => e.Id == ID);
+        }
         /// <summary>
         /// Logs in a user.
         /// </summary>
@@ -131,7 +135,7 @@ namespace WebAppAPI.Controllers
             {
                 return Unauthorized(new { message = "Invalid email or password" });
             }
-            return Ok(new { message = "Login successful", user = user });
+            return Ok(new { message = "Login successful", role = user.RoleId });
         }
 
         private bool VerifyPassword(string hashedPassword, string plainPassword)
