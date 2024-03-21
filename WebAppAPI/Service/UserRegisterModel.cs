@@ -24,5 +24,7 @@ namespace WebAppAPI.Service
         public string? Description { get; set; }
 
         public int? RoleId { get; set; }
+
+        public string? Code { get; set; }
     }
 }

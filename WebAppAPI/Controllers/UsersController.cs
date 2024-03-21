@@ -160,7 +160,46 @@ namespace WebAppAPI.Controllers
                 return Conflict(new { message = "Email address already exists" });
             }
 
-            // RoleId được đặt mặc định là 2
+          
+            var user = new User
+            {
+                Email = createUserRequest.Email,
+                Password = createUserRequest.Password,
+                FullName = createUserRequest.FullName,
+                PhoneNumber = createUserRequest.PhoneNumber,
+                Address = createUserRequest.Address,
+                Description = createUserRequest.Description,
+                Code = createUserRequest.Code,
+                RoleId = 3, // RoleId mặc định
+                CreationDate = DateTime.UtcNow,
+                ModificationDate = DateTime.UtcNow,
+                Status = 1,
+            };
+
+            _dbContext.Users.Add(user);
+            await _dbContext.SaveChangesAsync();
+            return CreatedAtAction(nameof(GetUsers), new { id = user.Id }, user);
+        }
+
+        /// <summary>
+        /// Creates a new user by admin
+        /// </summary>
+        /// <param name="createUserRequest">The user data.</param>
+        [HttpPost("createAccount")]
+        public async Task<ActionResult<User>> CreateAccountByAdmin([FromBody] UserRegisterModel createUserRequest)
+        {
+            if (!ModelState.IsValid)
+            {
+                return BadRequest(ModelState);
+            }
+
+            var existingUser = await _dbContext.Users.FirstOrDefaultAsync(u => u.Email == createUserRequest.Email);
+            if (existingUser != null)
+            {
+                return Conflict(new { message = "Email address already exists" });
+            }
+
+
             var user = new User
             {
                 Email = createUserRequest.Email,
@@ -173,20 +212,22 @@ namespace WebAppAPI.Controllers
                 CreationDate = DateTime.UtcNow,
                 ModificationDate = DateTime.UtcNow,
                 Status = 1,
+                ModificationBy = "admin",
+                IsDeleted = "NOTYET",
             };
-
             _dbContext.Users.Add(user);
             await _dbContext.SaveChangesAsync();
             return CreatedAtAction(nameof(GetUsers), new { id = user.Id }, user);
         }
 
 
-        /// <summary>
-        /// Updates a user by ID.
-        /// </summary>
-        /// <param name="id">The ID of the user to update.</param>
-        /// <param name="updateUserRequest">The updated user data.</param>
-        [HttpPut("{id}")]
+
+            /// <summary>
+            /// Updates a user by ID.
+            /// </summary>
+            /// <param name="id">The ID of the user to update.</param>
+            /// <param name="updateUserRequest">The updated user data.</param>
+            [HttpPut("{id}")]
         public async Task<IActionResult> UpdateUserAsync(int id, [FromBody] UpdateUserRequest updateUserRequest)
         {
             if (!ModelState.IsValid)
