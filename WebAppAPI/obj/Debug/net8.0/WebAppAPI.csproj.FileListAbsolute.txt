@@ -830,3 +830,4 @@ D:\FPT\SWD392\ProjectSWD392\WebServiceAPI\WebAppAPI\bin\Debug\net8.0\runtimes\wi
 D:\FPT\SWD392\ProjectSWD392\WebServiceAPI\WebAppAPI\bin\Debug\net8.0\runtimes\win\lib\net7.0\System.Drawing.Common.dll
 D:\FPT\SWD392\ProjectSWD392\WebServiceAPI\WebAppAPI\bin\Debug\net8.0\runtimes\win\lib\net7.0\System.Security.Cryptography.ProtectedData.dll
 D:\FPT\SWD392\ProjectSWD392\WebServiceAPI\WebAppAPI\bin\Debug\net8.0\runtimes\win\lib\net7.0\System.Windows.Extensions.dll
+D:\FPT\SWD392\ProjectSWD392\WebServiceAPI\WebAppAPI\bin\Debug\net8.0\Amazon.Lambda.Core.dll

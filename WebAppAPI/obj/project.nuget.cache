@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "C0S4S8flexuyF2lZMyIGfMJ/dOzBm/qt6ifvtvOJyZHGy7peYBB6TBoPCg42eu4Z35a/3D5f+hM6wGYVW8iqgw==",
+  "dgSpecHash": "sCUc+Ftr0rYHbG35vjdhUfXvuKgo2EFp5lqiJZBwwk7ERIKRPqOzwTBuRK75hvki2YgzrhFCvWwUZ4FIvnF6Cg==",
   "success": true,
   "projectFilePath": "D:\\FPT\\SWD392\\ProjectSWD392\\WebServiceAPI\\WebAppAPI\\WebAppAPI.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\THUAN\\.nuget\\packages\\amazon.lambda.core\\2.2.0\\amazon.lambda.core.2.2.0.nupkg.sha512",
     "C:\\Users\\THUAN\\.nuget\\packages\\azure.core\\1.25.0\\azure.core.1.25.0.nupkg.sha512",
     "C:\\Users\\THUAN\\.nuget\\packages\\azure.identity\\1.7.0\\azure.identity.1.7.0.nupkg.sha512",
     "C:\\Users\\THUAN\\.nuget\\packages\\humanizer\\2.14.1\\humanizer.2.14.1.nupkg.sha512",

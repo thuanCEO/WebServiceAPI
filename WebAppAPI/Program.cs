@@ -35,9 +35,10 @@ var builder = WebApplication.CreateBuilder(args);
 
             //Enable CROS
             app.UseCors(c => c.AllowAnyHeader().AllowAnyOrigin().AllowAnyMethod());
+//app.UseCors(c => c.WithOrigins("https://main.dbzcuscwyxkm6.amplifyapp.com/").AllowAnyHeader().AllowAnyMethod());
 
-            // Configure the HTTP request pipeline.
-            if (app.Environment.IsDevelopment())
+// Configure the HTTP request pipeline.
+if (app.Environment.IsDevelopment())
             {
                 app.UseSwagger();
                 app.UseSwaggerUI();
