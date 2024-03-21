@@ -184,16 +184,16 @@ namespace WebAppAPI.Controllers
         /// <summary>
         /// Creates a new user by admin
         /// </summary>
-        /// <param name="createUserRequest">The user data.</param>
+        /// <param name="createUserRequests">The user data.</param>
         [HttpPost("createAccount")]
-        public async Task<ActionResult<User>> CreateAccountByAdmin([FromBody] UserRegisterModel createUserRequest)
+        public async Task<ActionResult<User>> CreateAccountByAdmin([FromBody] UserRegisterModel createUserRequests)
         {
             if (!ModelState.IsValid)
             {
                 return BadRequest(ModelState);
             }
 
-            var existingUser = await _dbContext.Users.FirstOrDefaultAsync(u => u.Email == createUserRequest.Email);
+            var existingUser = await _dbContext.Users.FirstOrDefaultAsync(u => u.Email == createUserRequests.Email);
             if (existingUser != null)
             {
                 return Conflict(new { message = "Email address already exists" });
@@ -202,12 +202,12 @@ namespace WebAppAPI.Controllers
 
             var user = new User
             {
-                Email = createUserRequest.Email,
-                Password = createUserRequest.Password,
-                FullName = createUserRequest.FullName,
-                PhoneNumber = createUserRequest.PhoneNumber,
-                Address = createUserRequest.Address,
-                Description = createUserRequest.Description,
+                Email = createUserRequests.Email,
+                Password = createUserRequests.Password,
+                FullName = createUserRequests.FullName,
+                PhoneNumber = createUserRequests.PhoneNumber,
+                Address = createUserRequests.Address,
+                Description = createUserRequests.Description,
                 RoleId = 2, // RoleId mặc định
                 CreationDate = DateTime.UtcNow,
                 ModificationDate = DateTime.UtcNow,

@@ -1,0 +1,138 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>WebAppAPI</name>
+    </assembly>
+    <members>
+        <member name="T:WebAppAPI.Controllers.OrdersController">
+            <summary>
+            Controller handling operations related to orders.
+            </summary>
+        </member>
+        <member name="M:WebAppAPI.Controllers.OrdersController.GetOrders">
+            <summary>
+            Get a list of orders.
+            </summary>
+            <returns>List of orders.</returns>
+        </member>
+        <member name="M:WebAppAPI.Controllers.OrdersController.GetOrderID(System.Int32)">
+            <summary>
+            Get information about an order based on ID.
+            </summary>
+            <param name="ID">ID of the order to retrieve information.</param>
+            <returns>Information of the order.</returns>
+        </member>
+        <member name="M:WebAppAPI.Controllers.OrdersController.PostOrders(WebAppAPI.DTO.RequestOderDTO)">
+            <summary>
+            Create a new order.
+            </summary>
+            <param name="orderDto">Information of the order to create.</param>
+            <returns>Information of the newly created order.</returns>
+        </member>
+        <member name="M:WebAppAPI.Controllers.OrdersController.PutOrders(System.Int32,WebAppAPI.DTO.UpdateOrderDTOcs)">
+            <summary>
+            Update information of an order.
+            </summary>
+            <param name="id">ID of the order to update.</param>
+            <param name="orderDto">New information of the order.</param>
+            <returns>Result of the update.</returns>
+        </member>
+        <member name="M:WebAppAPI.Controllers.OrdersController.DeleteOrderAsync(System.Int32)">
+            <summary>
+            Delete an order based on ID.
+            </summary>
+            <param name="id">ID of the order to delete.</param>
+            <returns>Result of the order deletion.</returns>
+        </member>
+        <member name="M:WebAppAPI.Controllers.OrdersDetailsController.GetOrderDetailsByID(System.Int32)">
+            <summary>
+            Get information about an orderDetails based on ID.
+            </summary>
+            <param name="ID">ID of the order to retrieve information.</param>
+            <returns>Information of the order.</returns>
+        </member>
+        <member name="M:WebAppAPI.Controllers.ProductController.GetProducts">
+            <summary>
+            Retrieve all products.
+            </summary>
+            <returns>A list of products.</returns>
+        </member>
+        <member name="M:WebAppAPI.Controllers.ProductController.GetProductsID(System.Int32)">
+            <summary>
+            Retrieve a product by ID.
+            </summary>
+            <param name="ID">The ID of the product.</param>
+            <returns>The product with the specified ID.</returns>
+        </member>
+        <member name="M:WebAppAPI.Controllers.ProductController.PostProducts(WebAppAPI.DTO.RequestProductDTO)">
+            <summary>
+            Create a new product.
+            </summary>
+            <param name="productDto">The product data.</param>
+            <returns>The newly created product.</returns>
+        </member>
+        <member name="M:WebAppAPI.Controllers.ProductController.UpdateProduct(System.Int32,WebAppAPI.DTO.RequestProductDTO)">
+            <summary>
+            Update a product.
+            </summary>
+            <param name="id">The ID of the product to update.</param>
+            <param name="productDto">The updated product data.</param>
+            <returns>The updated product.</returns>
+        </member>
+        <member name="M:WebAppAPI.Controllers.ProductController.DeleteProductAsync(System.Int32)">
+            <summary>
+            Delete a product by ID.
+            </summary>
+            <param name="id">The ID of the product to delete.</param>
+            <returns>No content if the product is deleted successfully.</returns>
+        </member>
+        <member name="M:WebAppAPI.Controllers.UsersController.GetUsers">
+            <summary>
+            Retrieves all users.
+            </summary>
+        </member>
+        <member name="M:WebAppAPI.Controllers.UsersController.GetUsers(System.Int32)">
+            <summary>
+            Retrieves a user by ID.
+            </summary>
+            <param name="id">The ID of the user.</param>
+        </member>
+        <member name="M:WebAppAPI.Controllers.UsersController.LoginAsync(Microsoft.AspNetCore.Identity.Data.LoginRequest)">
+            <summary>
+            Logs in a user.
+            </summary>
+            <param name="loginRequest">The login request containing email and password.</param>
+        </member>
+        <member name="M:WebAppAPI.Controllers.UsersController.CreateUserAsync(WebAppAPI.Service.UserRegisterModel)">
+            <summary>
+            Creates a new user.
+            </summary>
+            <param name="userDto">The user data.</param>
+        </member>
+        <member name="M:WebAppAPI.Controllers.UsersController.CreateAccountByAdmin(WebAppAPI.Service.UserRegisterModel)">
+            <summary>
+            Creates a new user by admin
+            </summary>
+            <param name="createUserRequest">The user data.</param>
+        </member>
+        <member name="M:WebAppAPI.Controllers.UsersController.UpdateUserAsync(System.Int32,WebAppAPI.Service.UpdateUserRequest)">
+            <summary>
+            Updates a user by ID.
+            </summary>
+            <param name="id">The ID of the user to update.</param>
+            <param name="updateUserRequest">The updated user data.</param>
+        </member>
+        <member name="T:WebAppAPI.Migrations.Initial">
+            <inheritdoc />
+        </member>
+        <member name="M:WebAppAPI.Migrations.Initial.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:WebAppAPI.Migrations.Initial.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:WebAppAPI.Migrations.Initial.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc />
+        </member>
+    </members>
+</doc>

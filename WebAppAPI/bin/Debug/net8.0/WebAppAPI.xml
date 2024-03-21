@@ -113,7 +113,7 @@
             <summary>
             Creates a new user by admin
             </summary>
-            <param name="createUserRequest">The user data.</param>
+            <param name="createUserRequests">The user data.</param>
         </member>
         <member name="M:WebAppAPI.Controllers.UsersController.UpdateUserAsync(System.Int32,WebAppAPI.Service.UpdateUserRequest)">
             <summary>
