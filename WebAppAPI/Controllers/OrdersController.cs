@@ -208,5 +208,117 @@ namespace WebAppAPI.Controllers
 
             return NoContent();
         }
+        [HttpGet("ViewOrderByBrand/{userId}")]
+        public async Task<ActionResult<IEnumerable<Order>>> ViewOrderByBrand(int userId)
+        {
+            try
+            {
+
+                var brands = await _dbContext.Brands
+                                        .Where(b => b.UserId == userId)
+                                        .ToListAsync();
+
+                if (brands == null || !brands.Any())
+                {
+                    return NotFound("No brands found for the specified user.");
+                }
+
+                var brandIds = brands.Select(b => b.Id).ToList();
+
+                var shopIds = await _dbContext.ShopStores
+                                            .Where(s => brandIds.Contains(s.Id))
+                                            .Select(s => s.Id)
+                                            .ToListAsync();
+
+                if (shopIds == null || !shopIds.Any())
+                {
+                    return NotFound("No shops found for the specified brands.");
+                }
+
+                var orders = await _dbContext.Orders
+                                            .Where(o => shopIds.Contains(o.StoreId))
+                                            .ToListAsync();
+
+
+                if (orders == null || !orders.Any())
+                {
+                    return NotFound("No orders found for the specified shops.");
+                }
+
+                return Ok(orders);
+            }
+            catch (Exception ex)
+            {
+
+                return StatusCode(500, $"Internal server error: {ex.Message}");
+            }
+        }
+        [HttpGet("ViewOrderDetails/{orderId}")]
+        public async Task<ActionResult<OrderDetailsDTO>> ViewOrderDetails(int orderId)
+        {
+            try
+            {
+                var order = await _dbContext.Orders.FindAsync(orderId);
+
+                if (order == null)
+                {
+                    return NotFound("Order not found.");
+                }
+
+
+                var machine = await _dbContext.Machines.FindAsync(order.MachineId);
+                string machineName = machine?.Code;
+
+
+                var shopStore = await _dbContext.ShopStores.FindAsync(order.StoreId);
+                string storeName = shopStore?.StoreName;
+
+
+                int brandId = shopStore?.BrandId ?? 0;
+
+
+                var brand = await _dbContext.Brands.FindAsync(brandId);
+                string brandName = brand?.NameLogo;
+
+
+                var orderDetails = new OrderDetailsDTO
+                {
+                    OrderId = order.Id,
+                    MachineName = machineName,
+                    StoreName = storeName,
+                    BrandName = brandName,
+                    TotalPrice = order.TotalPrice
+                };
+                var orderItems = await _dbContext.OrderDetails
+                                                  .Where(od => od.OrderId == orderId)
+                                                  .ToListAsync();
+
+
+                foreach (var item in orderItems)
+                {
+
+                    var product = await _dbContext.Products.FindAsync(item.ProductId);
+
+
+                    var orderItemDto = new OrderItemDTO
+                    {
+                        ProductName = product?.ProductName,
+                        Quantity = item.Quantity,
+                        Price = item.Price
+                    };
+
+
+                    orderDetails.OrderItems.Add(orderItemDto);
+                }
+
+
+                return Ok(orderDetails);
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, $"Internal server error: {ex.Message}");
+            }
+        }
+
     }
 }
