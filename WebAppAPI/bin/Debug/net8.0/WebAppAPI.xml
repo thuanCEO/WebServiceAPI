@@ -4,6 +4,22 @@
         <name>WebAppAPI</name>
     </assembly>
     <members>
+        <member name="T:WebAppAPI.Controllers.BrandController">
+            <summary>
+            Controller handling operations related to orders.
+            </summary>
+        </member>
+        <member name="M:WebAppAPI.Controllers.BrandController.GetOrders">
+            <summary>
+            Get a list of orders.
+            </summary>
+            <returns>List of orders.</returns>
+        </member>
+        <member name="T:WebAppAPI.Controllers.CategoriesController">
+            <summary>
+            Controller handling operations related to category.
+            </summary>
+        </member>
         <member name="T:WebAppAPI.Controllers.OrdersController">
             <summary>
             Controller handling operations related to orders.
@@ -51,27 +67,27 @@
             <param name="ID">ID of the order to retrieve information.</param>
             <returns>Information of the order.</returns>
         </member>
-        <member name="M:WebAppAPI.Controllers.ProductController.GetProducts">
+        <member name="M:WebAppAPI.Controllers.ProductsController.GetProducts">
             <summary>
             Retrieve all products.
             </summary>
             <returns>A list of products.</returns>
         </member>
-        <member name="M:WebAppAPI.Controllers.ProductController.GetProductsID(System.Int32)">
+        <member name="M:WebAppAPI.Controllers.ProductsController.GetProductsID(System.Int32)">
             <summary>
             Retrieve a product by ID.
             </summary>
             <param name="ID">The ID of the product.</param>
             <returns>The product with the specified ID.</returns>
         </member>
-        <member name="M:WebAppAPI.Controllers.ProductController.PostProducts(WebAppAPI.DTO.RequestProductDTO)">
+        <member name="M:WebAppAPI.Controllers.ProductsController.PostProducts(WebAppAPI.DTO.RequestProductDTO)">
             <summary>
             Create a new product.
             </summary>
             <param name="productDto">The product data.</param>
             <returns>The newly created product.</returns>
         </member>
-        <member name="M:WebAppAPI.Controllers.ProductController.UpdateProduct(System.Int32,WebAppAPI.DTO.RequestProductDTO)">
+        <member name="M:WebAppAPI.Controllers.ProductsController.UpdateProduct(System.Int32,WebAppAPI.DTO.UpdateProductDTO)">
             <summary>
             Update a product.
             </summary>
@@ -79,7 +95,7 @@
             <param name="productDto">The updated product data.</param>
             <returns>The updated product.</returns>
         </member>
-        <member name="M:WebAppAPI.Controllers.ProductController.DeleteProductAsync(System.Int32)">
+        <member name="M:WebAppAPI.Controllers.ProductsController.DeleteProductAsync(System.Int32)">
             <summary>
             Delete a product by ID.
             </summary>
