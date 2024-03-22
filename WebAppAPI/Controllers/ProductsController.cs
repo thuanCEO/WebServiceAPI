@@ -185,5 +185,38 @@ namespace WebAppAPI.Controllers
             // Return a 201 Created response with the newly created product
             return CreatedAtAction(nameof(GetProductsID), new { id = product.Id }, product);
         }
+        [HttpGet("ViewProductByBrand/{userId}")]
+        public async Task<ActionResult<IEnumerable<Product>>> ViewProductByBrand(int userId)
+        {
+            try
+            {
+
+                var brands = await _dbContext.Brands
+                                        .Where(b => b.UserId == userId)
+                                        .ToListAsync();
+
+                if (brands == null || !brands.Any())
+                {
+                    return NotFound("No brands found for the specified user.");
+                }
+
+                var brandIds = brands.Select(b => b.Id).ToList();
+
+                var products = await _dbContext.Products
+                                            .Where(p => brandIds.Contains(p.BrandId))
+                                            .ToListAsync();
+
+                if (products == null || !products.Any())
+                {
+                    return NotFound("No products found for the specified brands.");
+                }
+
+                return Ok(products);
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, $"Internal server error: {ex.Message}");
+            }
+        }
     }
 }
