@@ -130,17 +130,12 @@ namespace WebAppAPI.Controllers
         public async Task<ActionResult<User>> LoginAsync([FromBody] LoginRequest loginRequest)
         {
             var user = await _dbContext.Users.FirstOrDefaultAsync(u => u.Email == loginRequest.Email);
-
+            var brand = await _dbContext.Brands.FirstOrDefaultAsync(u => u.UserId == user.Id);
             if (user == null || user.Password != loginRequest.Password)
             {
                 return Unauthorized(new { message = "Invalid email or password" });
             }
-            return Ok(new { message = "Login successful", role = user.RoleId });
-        }
-
-        private bool VerifyPassword(string hashedPassword, string plainPassword)
-        {
-            return hashedPassword == plainPassword;
+            return Ok(new { message = "Login successful", role = user.RoleId, brand = brand.Id });
         }
         /// <summary>
         /// Creates a new user.
