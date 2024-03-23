@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using WebAppAPI.DTO;
 using WebAppAPI.Entities;
 
 namespace WebAppAPI.Controllers

@@ -208,37 +208,24 @@ namespace WebAppAPI.Controllers
 
             return NoContent();
         }
-        [HttpGet("ViewOrderByBrand/{userId}")]
-        public async Task<ActionResult<IEnumerable<Order>>> ViewOrderByBrand(int userId)
+        [HttpGet("ViewOrderByBrand/{brandId}")]
+        public async Task<ActionResult<IEnumerable<Order>>> ViewOrderByBrand(int brandId)
         {
             try
             {
-
-                var brands = await _dbContext.Brands
-                                        .Where(b => b.UserId == userId)
-                                        .ToListAsync();
-
-                if (brands == null || !brands.Any())
-                {
-                    return NotFound("No brands found for the specified user.");
-                }
-
-                var brandIds = brands.Select(b => b.Id).ToList();
-
                 var shopIds = await _dbContext.ShopStores
-                                            .Where(s => brandIds.Contains(s.Id))
+                                            .Where(s => s.BrandId == brandId)
                                             .Select(s => s.Id)
                                             .ToListAsync();
 
                 if (shopIds == null || !shopIds.Any())
                 {
-                    return NotFound("No shops found for the specified brands.");
+                    return NotFound("No shops found for the specified brand.");
                 }
 
                 var orders = await _dbContext.Orders
                                             .Where(o => shopIds.Contains(o.StoreId))
                                             .ToListAsync();
-
 
                 if (orders == null || !orders.Any())
                 {
@@ -249,10 +236,10 @@ namespace WebAppAPI.Controllers
             }
             catch (Exception ex)
             {
-
                 return StatusCode(500, $"Internal server error: {ex.Message}");
             }
         }
+
         [HttpGet("ViewOrderDetails/{orderId}")]
         public async Task<ActionResult<OrderDetailsDTO>> ViewOrderDetails(int orderId)
         {
